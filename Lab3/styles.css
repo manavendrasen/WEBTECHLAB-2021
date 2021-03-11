@@ -51,8 +51,6 @@ nav li {
 /* sections` */
 section {
   background-color: #edf2f7;
-  /* background-color: #f7fafc; */
-  /* background-color: rgb(237, 242, 247); */
 }
 
 .main {
@@ -94,7 +92,6 @@ section {
 
 .review {
   padding-top: 1rem;
-  /* padding-bottom: 1rem; */
   border-top: 2px solid #e2e8f0;
 }
 
