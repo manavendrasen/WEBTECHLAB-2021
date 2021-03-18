@@ -1,0 +1,73 @@
+html, body, header, footer, hgroup, nav, article, section, figure, figcaption, h1, h2, h3, ul, li, body, div, p, img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+
+h1, h2, h3, nav, footer {
+    font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+body {
+    font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+    font-size: 80%;
+}
+
+#art {
+    background-color: #EBF4FF;
+    margin-top: 1em;
+    background-color: #FAFCFF;
+    margin: 2em auto;
+    padding: 3em;
+    border: 1.5pt solid #95BEF0;
+    width: 80%;
+}
+
+caption {
+    background-color: #95BEF0;
+    padding: 0.5em 0.5em;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table td {
+    border-top: 1pt solid #95BEF0;
+    line-height: 1.5em;
+    vertical-align: middle;
+    padding: 0.5em 0.75em;
+    font-style: italic;
+    /* font-weight: 400; */
+}
+
+tbody {
+    border-top: 1pt solid #95BEF0;
+    line-height: 1.5em;
+    vertical-align: middle;
+    padding: 0.5em 0.75em;
+}
+
+table th {
+    text-align: left;
+    padding: 0.25em 0.75em;
+}
+
+thead {
+    text-align: left;
+    padding: 0.25em 0.75em;
+}
+
+table thead {
+    background-color: #EBF4FF;
+}
+
+table tbody td:first-child {
+    text-align: center;
+    padding: 0.5em 0em;
+}
