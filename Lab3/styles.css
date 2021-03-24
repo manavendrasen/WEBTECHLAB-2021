@@ -3,6 +3,12 @@
 }
 
 /* resetting */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -17,12 +23,7 @@ section {
   padding: 1rem 10rem;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Inter", Arial, Helvetica, sans-serif;
-}
-
+/* header */
 header {
   border-bottom: 2px solid #e2e8f0;
   display: flex;
@@ -38,6 +39,8 @@ header > div {
 header h1 {
   margin-left: 1rem;
 }
+
+/* navigation */
 
 nav ul {
   display: flex;
@@ -84,11 +87,15 @@ section {
   filter: opacity(0.5);
 }
 
+/* related */
+
 #related img {
   border-radius: 4px;
   margin-right: 1.5rem;
   /* width: 300px; */
 }
+
+/* review */
 
 .review {
   padding-top: 1rem;
