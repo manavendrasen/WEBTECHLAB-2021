@@ -1,0 +1,45 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* for centering of webpage */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table {
+  border: 1pt solid #95bef0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption {
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #90cdf4;
+}
+
+thead,
+th {
+  background-color: #bee3f8;
+  padding: 1rem;
+  text-align: left;
+}
+
+td {
+  font-style: italic;
+  padding: 1rem;
+  border-top: 1pt solid #95bef0;
+}
+
+tr:nth-child(2n + 1) {
+  background-color: #ebf8ff;
+}
+
+img {
+  width: 50px;
+  height: auto;
+}
