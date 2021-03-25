@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8" />
+    <title>LAB 5 | HTML Tables</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Photo Details</legend>
+        <table>
+          <tr>
+            <td colspan="2">
+              <p>
+                <label>Title</label> <br />
+                <input type="text" name="title" size="85" />
+              </p>
+              <p>
+                <label>Description</label><br />
+                <textarea name="description" rows="5" cols="85"> </textarea>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <label>Continent</label>
+                <select name="continent">
+                  <option>Choose continent</option>
+                  <option>Africa</option>
+                  <option>Asia</option>
+                  <option>Europe</option>
+                  <option>North America</option>
+                  <option>South America</option>
+                </select>
+              </p>
+
+              <p>
+                <label>Country</label>
+                <select name="country">
+                  <option>Choose country</option>
+                  <option>India</option>
+                  <option>France</option>
+                  <option>USA</option>
+                  <option>Brazil</option>
+                  <option>China</option>
+                  <option>Canada</option>
+                </select>
+              </p>
+              <p>
+                <label>City</label><br />
+                <input type="text" name="city" list="cities" size="45" />
+                <datalist id="cities">
+                  <option>New Delhi</option>
+                  <option>New York</option>
+                  <option>Paris</option>
+                </datalist>
+              </p>
+            </td>
+
+            <td>
+              <div class="box">
+                <label>Copyright? </label><br />
+                <input type="radio" name="copyright" value="1" />All rights
+                reserved<br />
+                <input
+                  type="radio"
+                  name="copyright"
+                  value="2"
+                  checked
+                />Creative Commons<br />
+              </div>
+
+              <div class="box">
+                <label>Creative Commons Types </label><br />
+                <input type="checkbox" name="cc" />Attribution<br />
+                <input type="checkbox" name="cc" />Noncommercial <br />
+                <input type="checkbox" name="cc" />No Derivative Works <br />
+                <input type="checkbox" name="cc" />Share Alike
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" name="accept" />
+              <label>I accept the software license</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <label>Rate this photo:</label>
+                <input type="number" min="1" max="10" name="rate" />
+              </p>
+              <p>
+                <label>Color Collection:</label>
+                <input type="color" name="color" />
+              </p>
+            </td>
+            <td>
+              <div class="box">
+                <p>
+                  <label>Date Taken:</label>
+                  <input type="date" name="date" />
+                </p>
+                <p>
+                  <label>Time Taken:</label>
+                  <input type="time" name="time" />
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <center>
+                <button type="submit" class="button">Submit</button>
+                <button type="reset" value="Clear Form" class="button">
+                  Clear Data
+                </button>
+              </center>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
