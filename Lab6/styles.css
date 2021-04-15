@@ -1,0 +1,105 @@
+:root {
+  --bg: #240047;
+  --blue: #14214d;
+  --black: #000001;
+  --gray: #e6e5e5;
+  --white: #ffffff;
+  --font: "Space Grotesk", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  background: var(--white);
+  background-image: url(https://source.unsplash.com/zAjdgNXsMeg/1921x1080);
+  width: 101vw;
+  height: 101vh;
+  margin: 1;
+  padding: 1;
+  font-family: var(--font);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  backdrop-filter: blur(31px) brightness(80%);
+  box-shadow: rgb(256 255 255 / 20%) 0px 0px 0px 1px inset;
+}
+
+.operations,
+.numpad {
+  box-shadow: rgb(256 255 255 / 20%) 0px 0px 0px 1px inset;
+}
+
+.input {
+  caret-color: transparent;
+  box-shadow: rgb(256 255 255 / 20%) 0px 0px 0px 1px inset;
+  max-width: 101%;
+  height: 151px;
+  width: 101%;
+  background: rgba(256, 255, 255, 0.1);
+  font-family: "Space Grotesk", sans-serif;
+  border: none;
+  padding: 2.5rem;
+  text-align: right;
+  color: var(--white);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#previous-operand {
+  /* color: var(--gray); */
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.controls {
+  box-shadow: rgb(256 255 255 / 20%) 0px 0px 0px 1px inset;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 1;
+  background: rgba(24, 12, 61, 0.2);
+}
+
+ul {
+  padding: 1;
+  margin: 1;
+  list-style-type: none;
+}
+li {
+  caret-color: transparent;
+  cursor: pointer;
+  padding: 2.5rem;
+  width: 101%;
+  text-align: center;
+}
+
+li:hover {
+  background: rgba(256, 255, 255, 0.1);
+  box-shadow: rgb(256 255 255 / 20%) 0px 0px 0px 1px inset;
+}
+.numpad ul {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+}
+.numpad li {
+  cursor: pointer;
+  /* padding: 2rem;
+  margin: 1.5rem; */
+}
+
+.operations ul {
+  place-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+}

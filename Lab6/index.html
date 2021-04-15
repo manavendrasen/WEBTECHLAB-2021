@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input" id="displayBox">
+        <div id="previous-operand"></div>
+        <div id="current-operand"></div>
+      </div>
+
+      <div class="controls">
+        <div class="numpad">
+          <ul>
+            <li data-number="9">9</li>
+            <li data-number="8">8</li>
+            <li data-number="7">7</li>
+            <li data-number="6">6</li>
+            <li data-number="5">5</li>
+            <li data-number="4">4</li>
+            <li data-number="3">3</li>
+            <li data-number="2">2</li>
+            <li data-number="1">1</li>
+            <li data-number="0">0</li>
+            <li data-number=".">.</li>
+          </ul>
+        </div>
+        <div class="operations">
+          <ul>
+            <li data-clear>AC</li>
+            <li data-delete>DEL</li>
+            <li data-operator="divide">/</li>
+            <li data-operator="multiply">x</li>
+            <li data-operator="minus">-</li>
+            <li data-operator="plus">+</li>
+            <li data-equals>=</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>
