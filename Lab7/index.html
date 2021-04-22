@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="utf-8" />
+    <title>LAB 7 | Form Validation</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./app.js"></script>
+  </head>
+
+  <body>
+    <form id="form" action="/" method="POST">
+      <fieldset>
+        <legend>Photo Details</legend>
+        <table>
+          <tr>
+            <td colspan="2">
+              <p>
+                <div id="error-message"></div>
+              </p>
+              <p>
+                <label for="title">Title*</label> <br />
+                <input id="title" type="text" name="title" size="85"/>
+              </p>
+              <p>
+                <label for="description">Description*</label><br />
+                <textarea id="description" name="description" rows="5" cols="85"></textarea>
+              </p>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <label for="continent">Continent</label>
+                <select id="continent" name="continent">
+                  <option>Choose continent</option>
+                  <option>Africa</option>
+                  <option>Asia</option>
+                  <option>Europe</option>
+                  <option>North America</option>
+                  <option>South America</option>
+                </select>
+              </p>
+
+              <p>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option>Choose country</option>
+                  <option>India</option>
+                  <option>France</option>
+                  <option>USA</option>
+                  <option>Brazil</option>
+                  <option>China</option>
+                  <option>Canada</option>
+                </select>
+              </p>
+              <p>
+                <label for="city">City</label><br />
+                <input id="city" type="text" name="city" list="cities" size="45" />
+                <datalist id="cities">
+                  <option>New Delhi</option>
+                  <option>New York</option>
+                  <option>Paris</option>
+                </datalist>
+              </p>
+            </td>
+
+            <td>
+              <div class="box">
+                <label for="copyright">Copyright? </label><br />
+                <input type="radio" name="copyright" value="1" />All rights
+                reserved<br />
+                <input
+                  type="radio"
+                  name="copyright"
+                  value="2"
+                  checked
+                />Creative Commons<br />
+              </div>
+
+              <div class="box">
+                <label for="cc">Creative Commons Types </label><br />
+                <input type="checkbox" name="cc" />Attribution<br />
+                <input type="checkbox" name="cc" />Noncommercial <br />
+                <input type="checkbox" name="cc" />No Derivative Works <br />
+                <input type="checkbox" name="cc" />Share Alike
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input id="accept" type="checkbox" name="accept" />
+              <label for="accept">I accept the software license*</label>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p>
+                <label for="rate">Rate this photo:</label>
+                <input id="rate" type="number" min="1" max="10" name="rate" />
+              </p>
+              <p>
+                <label>Color Collection:</label>
+                <input id="color" type="color" name="color" />
+              </p>
+            </td>
+            <td>
+              <div class="box">
+                <p>
+                  <label for="date1">Date Taken:</label>
+                  <input id="date" type="date" name="date" />
+                </p>
+                <p>
+                  <label>Time Taken:</label>
+                  <input id="time" type="time" name="time" />
+                </p>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <center>
+                <button id="submit-button" type="submit" class="button">Submit</button>
+                <button id="reset-button" type="reset" value="Clear Form" class="button">
+                  Clear Data
+                </button>
+              </center>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+  </body>
+</html>
