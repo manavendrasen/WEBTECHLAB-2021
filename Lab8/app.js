@@ -5,8 +5,6 @@ var description = $("#description");
 var acceptLicense = $("#accept");
 
 $("#form").submit(function (e) {
-  e.preventDefault();
-
   if (title.val() === "" || title.val() === null) {
     title.addClass("error");
     errorMessages.push("Name is required");
@@ -19,11 +17,18 @@ $("#form").submit(function (e) {
 
   if (!acceptLicense.prop("checked")) {
     acceptLicense.next().addClass("error-accept");
-    errorMessages.push("select is required");
+    errorMessages.push("Please Accept the software license");
   }
 
-  $("#error-message").text(errorMessages.join("\t"));
+  // we check if we have errors
+  if (errorMessages.length > 0) {
+    e.preventDefault(); // if we have errors, we don't want to submit the form
+    $("#error-message").text(errorMessages.join(" | "));
+    errorMessages = [];
+  }
 });
+
+// removing the css border when user inputs anything
 
 $(title).change(function () {
   title.removeClass("error");
@@ -37,10 +42,12 @@ $(acceptLicense).change(function () {
   acceptLicense.next().removeClass("error-accept");
 });
 
+// reset buttons clears all errors and red styling
+
 $("#reset-button").click(function () {
   errorMessages = [];
   title.removeClass("error");
   description.removeClass("error");
   acceptLicense.next().removeClass("error-accept");
-  $("#error-message").text("");
+  $("#error-message").text(null);
 });
